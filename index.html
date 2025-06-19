@@ -6,10 +6,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation oficial de la API de pastelitos">
+        <meta name="description" content="Documentation oficial de la API de capybaras">
       
       
-        <meta name="author" content="Equipo Cupcake">
+        <meta name="author" content="Equipo Capybaranse (Roberto Marenco)">
       
       
       
@@ -22,7 +22,7 @@
     
     
       
-        <title>CupCakeApiDocs</title>
+        <title>CapyAPI</title>
       
     
     
@@ -74,7 +74,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#bienvenido-a-cupcakeapi" class="md-skip">
+        <a href="#bienvenido-a-capyapi" class="md-skip">
           Skip to content
         </a>
       
@@ -90,7 +90,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="CupCakeApiDocs" class="md-header__button md-logo" aria-label="CupCakeApiDocs" data-md-component="logo">
+    <a href="." title="CapyAPI" class="md-header__button md-logo" aria-label="CapyAPI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -104,7 +104,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            CupCakeApiDocs
+            CapyAPI
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -206,13 +206,13 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="CupCakeApiDocs" class="md-nav__button md-logo" aria-label="CupCakeApiDocs" data-md-component="logo">
+    <a href="." title="CapyAPI" class="md-nav__button md-logo" aria-label="CapyAPI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
 
     </a>
-    CupCakeApiDocs
+    CapyAPI
   </label>
   
   <ul class="md-nav__list" data-md-scrollfix>
@@ -317,12 +317,12 @@
   
   
     <li class="md-nav__item">
-      <a href="guia/autenticacion/" class="md-nav__link">
+      <a href="guia/endpoints/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Autenticación
+    Endpoints
     
   </span>
   
@@ -340,12 +340,35 @@
   
   
     <li class="md-nav__item">
-      <a href="guia/endpoints/" class="md-nav__link">
+      <a href="guia/post/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
-    Endpoints
+    Crear capibara (POST)
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="guia/put/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Actualizar capibara (PUT)
     
   </span>
   
@@ -424,29 +447,6 @@
 
               
             
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="recursos/changelog/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Cambios
-    
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
           </ul>
         </nav>
       
@@ -488,13 +488,21 @@
 
 
 
-<h1 id="bienvenido-a-cupcakeapi">Bienvenido a CupcakeAPI<a class="headerlink" href="#bienvenido-a-cupcakeapi" title="Permanent link">#</a></h1>
-<p>Esta es la documentacion oficial de nuestra API.</p>
-<p><img alt="Ejemplo" src="img/ejemplo.png" /></p>
-<blockquote>
-<p>CupcakeAPI te permite gestionar pedidos, usuarios y recetas de pastelitos</p>
-</blockquote>
+<h1 id="bienvenido-a-capyapi">Bienvenido a CapyAPI<a class="headerlink" href="#bienvenido-a-capyapi" title="Permanent link">#</a></h1>
+<p>Bienvenido a la documentación oficial de <strong>CapyAPI</strong>, un servicio RESTful que proporciona información detallada sobre capybaras (Hydrochoerus hydrochaeris), el roedor más grande del mundo. Esta API permite consultar datos, agregar información y realizar búsquedas relacionadas con capybaras.</p>
+<p><img alt="Ejemplo" src="img/infocapy.png" /></p>
 <p>Explora la <a href="guia/introduccion/">Guia de Inicio</a></p>
+<div class="admonition warning">
+<p class="admonition-title">Advertencia: Alta probabilidad de adicción a capybaras 🐾</p>
+<p>Interactuar frecuentemente con esta API puede provocar un apego emocional inesperado hacia las capybaras.<br />
+Se han reportado casos de usuarios que:</p>
+<ul>
+<li>Cambiaron su fondo de pantalla por una capibara.</li>
+<li>Empezaron a planear viajes a Sudamérica para verlas en su hábitat natural.</li>
+<li>Adoptaron un estilo de vida más relajado e introspectivo, inspirado por estos nobles roedores.</li>
+</ul>
+<p>Utiliza esta API con responsabilidad. Una vez que conoces a una capibara... ya no hay vuelta atrás.</p>
+</div>
 
 
 

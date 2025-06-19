@@ -13,10 +13,10 @@
       
       
       
-        <link rel="prev" href="../introduccion/">
+        <link rel="prev" href="../post/">
       
       
-        <link rel="next" href="../post/">
+        <link rel="next" href="../../recursos/preguntas/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -24,7 +24,7 @@
     
     
       
-        <title>Endpoints - CapyAPI</title>
+        <title>Actualizar capibara (PUT) - CapyAPI</title>
       
     
     
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#tabla-de-endpoints" class="md-skip">
+        <a href="#actualizar-una-capibara-existente" class="md-skip">
           Skip to content
         </a>
       
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Endpoints
+              Actualizar capibara (PUT)
             
           </span>
         </div>
@@ -308,32 +308,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Endpoints
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../endpoints/" class="md-nav__link">
         
   
   
@@ -344,35 +322,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#notas" class="md-nav__link">
-    <span class="md-ellipsis">
-      Notas
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -405,10 +354,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../put/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Actualizar capibara (PUT)
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -419,6 +390,44 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#put-capybarasid" class="md-nav__link">
+    <span class="md-ellipsis">
+      PUT /capybaras/{id}
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encabezados-requeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encabezados requeridos
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -526,9 +535,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#notas" class="md-nav__link">
+  <a href="#put-capybarasid" class="md-nav__link">
     <span class="md-ellipsis">
-      Notas
+      PUT /capybaras/{id}
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#encabezados-requeridos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Encabezados requeridos
     </span>
   </a>
   
@@ -550,54 +568,23 @@
 
 
 
-<h1 id="tabla-de-endpoints">Tabla de Endpoints<a class="headerlink" href="#tabla-de-endpoints" title="Permanent link">#</a></h1>
-<p>A continuación se presenta una tabla con los endpoints disponibles en la Capybara API, sus métodos HTTP y una breve descripción de su funcionalidad:</p>
-<table>
-<thead>
-<tr>
-<th>Método</th>
-<th>Endpoint</th>
-<th>Descripción</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GET</td>
-<td><code>/capybaras</code></td>
-<td>Obtiene la lista de todas las capibaras</td>
-</tr>
-<tr>
-<td>GET</td>
-<td><code>/capybaras/{id}</code></td>
-<td>Obtiene los detalles de una capibara específica</td>
-</tr>
-<tr>
-<td>POST</td>
-<td><code>/capybaras</code></td>
-<td>Crea una nueva capibara</td>
-</tr>
-<tr>
-<td>PUT</td>
-<td><code>/capybaras/{id}</code></td>
-<td>Actualiza los datos de una capibara existente</td>
-</tr>
-<tr>
-<td>DELETE</td>
-<td><code>/capybaras/{id}</code></td>
-<td>Elimina una capibara de la base de datos</td>
-</tr>
-</tbody>
-</table>
-<h2 id="notas">Notas<a class="headerlink" href="#notas" title="Permanent link">#</a></h2>
-<ul>
-<li>Todos los endpoints responden con JSON.</li>
-<li>Los campos requeridos para <code>POST</code> y <code>PUT</code> están documentados en sus respectivas secciones.</li>
-<li>Por ahora, no se requiere autenticación, pero esto puede cambiar en futuras versiones.</li>
-</ul>
-<blockquote>
-<p><a href="../post/">POST</a></p>
-<p><a href="../put/">PUT</a></p>
-</blockquote>
+<h1 id="actualizar-una-capibara-existente">Actualizar una capibara existente<a class="headerlink" href="#actualizar-una-capibara-existente" title="Permanent link">#</a></h1>
+<h3 id="put-capybarasid"><code>PUT /capybaras/{id}</code><a class="headerlink" href="#put-capybarasid" title="Permanent link">#</a></h3>
+<p>Este endpoint permite actualizar los datos de una capibara existente identificada por su ID.</p>
+<hr />
+<h2 id="encabezados-requeridos">Encabezados requeridos<a class="headerlink" href="#encabezados-requeridos" title="Permanent link">#</a></h2>
+<div class="language-http highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="nf">PUT</span> <span class="nn">/capybaras/7</span> <span class="kr">HTTP</span><span class="o">/</span><span class="m">1.1</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="na">Host</span><span class="o">:</span> <span class="l">api.capybaras.dev</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="na">Content-Type</span><span class="o">:</span> <span class="l">application/json</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="na">Accept</span><span class="o">:</span> <span class="l">application/json</span>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="p">{</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="nt">&quot;nombre&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Carlitos&quot;</span><span class="p">,</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">  </span><span class="nt">&quot;edad&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="nt">&quot;peso_kg&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">50.0</span><span class="p">,</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="nt">&quot;ubicacion&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Delta del Orinoco&quot;</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="p">}</span>
+</span></code></pre></div>
 
 
 
