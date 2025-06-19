@@ -21,3 +21,5 @@ Accept: application/json
   "ubicacion": "Delta del Orinoco"
 }
 ```
+
+[Endpoints](./endpoints.md)

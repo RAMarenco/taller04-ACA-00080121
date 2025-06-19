@@ -15,3 +15,5 @@ Accept: application/json
   "ubicacion": "Llanos venezolanos"
 }
 ```
+
+[Endpoints](./endpoints.md)
