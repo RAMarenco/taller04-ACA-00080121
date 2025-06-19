@@ -1,0 +1,41 @@
+site_name: CapyAPI
+site_description: Documentation oficial de la API de capybaras
+site_author: Equipo Capybaranse (Roberto Marenco)
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: purple
+      accent: teal
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: purple
+      accent: lime
+  features:
+    - content.code.copy
+    
+markdown_extensions:
+  - admonition
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: "#"
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+
+nav:
+  - Inicio: index.md
+  - Guia de uso:
+    - Introducción: guia/introduccion.md
+    - Endpoints: guia/endpoints.md
+    - Crear capibara (POST): guia/post.md
+    - Actualizar capibara (PUT): guia/put.md
+  - Recursos:
+    - Preguntas frecuentes: recursos/preguntas.md
